@@ -1,0 +1,68 @@
+/* Navigation bar container */
+.navbar {
+  background-color: #000000;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Brand logo styling */
+
+.logo a{
+  display:flex;
+  align-items: center;
+  justify-content: flex-end;
+  height:70px;
+}
+
+.logo-img{
+  width:320px;
+  height:60px;
+}
+
+/* Navigation links container */
+.links {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Individual navigation link */
+.links Link {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.links Link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+
+
+  .links {
+    gap: 1rem;
+  }
+
+  .links Link {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px){
+  .logo {
+    display:none;
+  }
+
+  .navbar{
+    justify-content: center;
+  }
+}
