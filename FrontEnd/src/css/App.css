@@ -7,3 +7,10 @@
   display: flex;
   flex-direction: column;
 }
+
+.main-content:has(.film-details) {
+  padding: 0;
+  display: block; 
+  flex: none; 
+  
+}
